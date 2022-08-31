@@ -25,6 +25,9 @@
           <li>
             <a href="#vacation">Planning a vacation</a>
           </li>
+          <li>
+            <a href="#contact">Contact me</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -49,7 +52,7 @@
             </p>
           </figure>
         </section>
-        <p>This is the first parahraph on this webpage</p>
+        <p>This is the first paragraph on this webpage</p>
 
         <section>
           <h3>My Daily Schedule</h3>
@@ -58,7 +61,7 @@
             <li>&nbsp;&nbsp;&nbsp;...I learn more about web dev</li>
             <li>&nbsp;&nbsp;&nbsp;...I plan out my Schedule</li>
             <li>
-              &nbsp;&nbsp;&nbsp;...I use resource from
+              &nbsp;&nbsp;&nbsp;...I use resources from
               <abbr title="Mozilla Developer Network"
                 ><a
                   href="https://developer.mozilla.org/"
@@ -70,18 +73,77 @@
             </li>
             <!--Not every single operating system or technology supports the abbriviation-->
           </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8 am</time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning.
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>-<time datetime="12:00"
+                    >12pm</time
+                  >
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="17:00"
+                    >5pm</time
+                  >
+                </td>
+                <td>Study for other Courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All Other Times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  And that's what I do every day 5 days a week. Eat, sleep,
+                  rave, repeat.
+                </td>
+              </tr>
+            </tfoot>
+          </table>
         </section>
-        <aside>
-          <details>
-            <summary>
-              Guess the <mark>number of hours</mark> I code per day
-            </summary>
-            <p>
-              I start at <time datetime="08:00">8 am</time> and I write code for
-              <time datetime="PT3H">3 hours</time> every morning.
-            </p>
-          </details>
-        </aside>
       </article>
       <hr />
 
@@ -92,51 +154,216 @@
         <p>
           i live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.
         </p>
-
-        <h3>places i'd like to visit</h3>
-        <ul>
-          <li>
-            <p>i've heard good things about the Caribbean.</p>
-            <figure>
-              <img
-                src="https://www.islands.com/wp-content/uploads/sites/13/2021/09/christophe20harbour20resort.jpg"
-                width="300"
-                height="300"
-                loading="lazy"
-                alt="Carribean beach resort"
-                title="It's 5 o'clock somewhere"
+        <section>
+          <h3>places i'd like to visit</h3>
+          <ul>
+            <li>
+              <p>i've heard good things about the Caribbean.</p>
+              <figure>
+                <img
+                  src="https://www.islands.com/wp-content/uploads/sites/13/2021/09/christophe20harbour20resort.jpg"
+                  width="300"
+                  height="300"
+                  loading="lazy"
+                  alt="Carribean beach resort"
+                  title="It's 5 o'clock somewhere"
+                />
+                <figcaption>Carribean Beach Getaway</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                Margaritaville Island Reserve Riviera Cancún<br />
+                Bahia Petempich Puerto Morelos, Mexico<br />
+                Colonia Morelos, México 77580
+              </address>
+              <figure>
+                <img
+                  src="https://images.triseptsolutions.com/Hotels/HbsImg/46504/slideshow/46504_m01.jpg"
+                  loading="lazy"
+                  alt="Hotel in Cancun"
+                  width="300"
+                  height="300"
+                />
+                <figcaption>Hotel in Cancun</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>places i want to avoid</h3>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong></dd>
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+          </dl>
+        </section>
+      </article>
+      <hr />
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd really like to hear from you</p>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <p>
+              <label for="firstName">First Name:</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Jude"
+                autocomplete="on"
+                required
+                autofocus
               />
-              <figcaption>Carribean Beach Getaway</figcaption>
-            </figure>
-          </li>
-          <li>
-            <p>I've heard good things about going here:</p>
-            <address>
-              Margaritaville Island Reserve Riviera Cancún<br />
-              Bahia Petempich Puerto Morelos, Mexico<br />
-              Colonia Morelos, México 77580
-            </address>
-            <figure>
-              <img
-                src="https://images.triseptsolutions.com/Hotels/HbsImg/46504/slideshow/46504_m01.jpg"
-                loading="lazy"
-                alt="Hotel in Cancun"
-                width="300"
-                height="300"
+            </p>
+            <p>
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Doe"
+                autocomplete="on"
+                required
               />
-              <figcaption>Hotel in Cancun</figcaption>
-            </figure>
-          </li>
-        </ul>
-        <h3>places i want to avoid</h3>
-        <dl>
-          <dt>North Pole</dt>
-          <dd>I hear this is <strong>cold</strong></dd>
-          <dt>South Pole</dt>
-          <dd>This is also cold.</dd>
-          <dt>Mountain Tops</dt>
-          <dd>These are also cold.</dd>
-        </dl>
+            </p>
+            <p>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Your Secret"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="5555555555"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                required
+              />
+            </p>
+            <p>
+              <label for="decade">Favorite Decade:</label>
+              <input
+                type="number"
+                name="decade"
+                id="decade"
+                min="1950"
+                max="2022"
+                step="10"
+                value="1980"
+              />
+            </p>
+            <p>
+              <label for="coffee">Favorite Coffee:</label>
+              <select name="coffee" id="coffee">
+                <optgroup label="Coffees">
+                  <option value="regular coffee">Regular Coffee</option>
+                  <option value="iced coffee">Iced Coffee</option>
+                </optgroup>
+                <optgroup label="Espresso Drinks">
+                  <option value="latte">Latte</option>
+                  <option value="" selected></option>
+                  <option value="cappucino">Cappucino</option>
+                  <option value="cortado">Cortado</option>
+                  <option value="americano">Americano</option>
+                  <option value="other">Other</option>
+                </optgroup>
+              </select>
+            </p>
+            <!-- <p>
+            <label for="coffee">Favorite Coffee:</label>
+            <input type="text" anme="Coffee" id="Coffee" list="coffee-list">
+              <datalist id="coffee-list">
+                <option value="coffee">
+                <option value="latte">
+                <option value="espresso">
+                <option value="" selected>
+                <option value="cappucino">
+                <option value="cortado">
+                <option value="americano">
+                <option value="other">
+              </datalist>
+            </select>
+          </p> -->
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>What is your facourite food</legend>
+            <p>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="tacos">Tacos</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza" />
+              <label for="Pizza">Pizza</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="other">Other</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat" />
+              <label for="cat">cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish" />
+              <label for="fish">Fish</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="pets"
+                id="otherPet"
+                value="otherPet"
+              />
+              <label for="otherPet">Other</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Send Me A Note</legend>
+            <label for="message">Your Message:</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+            ></textarea>
+          </fieldset>
+          <br />
+          <button type="submit">Submit</button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Post(better than the submit button)
+          </button>
+          <button type="reset">Reset</button>
+        </form>
       </article>
     </main>
     <hr />
